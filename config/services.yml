@@ -1,0 +1,9 @@
+services:
+    dmzx.noaccess.listener:
+        class: dmzx\noaccess\event\listener
+        arguments:
+            - '@config'
+            - '@user'
+            - '@auth'
+        tags:
+            - { name: event.listener }
