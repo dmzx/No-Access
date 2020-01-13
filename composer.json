@@ -2,30 +2,31 @@
 	"name": "dmzx/noaccess",
 	"type": "phpbb-extension",
 	"description": "This extension will show message to members that don't have access to a forum.",
-	"homepage": "http://www.dmzx-web.net",
-	"version": "1.0.0",
-	"time": "2017-04-30",
+	"homepage": "https://www.dmzx-web.net",
+	"version": "1.0.1",
+	"time": "2020-01-13",
 	"keywords": [
 		"phpbb",
 		"extension",
 		"noaccess"
 	],
-	"license": "GPL-2.0",
+	"license": "GPL-2.0-only",
 	"authors": [
 		{
 			"name": "dmzx",
-			"homepage": "http://www.dmzx-web.net",
+			"homepage": "https://www.dmzx-web.net",
 			"email": "info@dmzx-web.net",
 			"role": "Extension Developer"
 		},
 		{
 			"name": "martin",
-			"homepage": "http://www.martins.homelinux.net",
+			"homepage": "https://www.martins-phpbb.com",
 			"role": "Extension Developer"
 		}
 	],
 	"require": {
-		"php": ">=5.3.3"
+		"php": ">=5.3.3",
+		"composer/installers": "~1.0"
 	},
 	"require-dev": {
 		"phpbb/epv": "dev-master"
@@ -33,12 +34,13 @@
 	"extra": {
 		"display-name": "No Access",
 		"soft-require": {
-			"phpbb/phpbb": ">=3.1.0,<3.3"
+			"phpbb/phpbb": ">=3.1.0,<4.4.0@dev"
 		},
 		"version-check": {
 			"host": "www.dmzx-web.net",
 			"directory": "/versions",
-			"filename": "noaccess_version.json"
+			"filename": "noaccess_version.json",
+			"ssl": true
 		}
 	}
 }

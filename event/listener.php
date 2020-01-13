@@ -2,7 +2,7 @@
 /**
 *
 * @package phpBB Extension - No Access
-* @copyright (c) 2017 dmzx - http://www.dmzx-web.net
+* @copyright (c) 2017 dmzx - https://www.dmzx-web.net
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
@@ -61,8 +61,7 @@ class listener implements EventSubscriberInterface
 
 			$forum_row['TOPICS'] = '-';
 			$forum_row['POSTS'] = '-';
-			$forum_row['LAST_POST_TIME'] = '&nbsp;
-			<script>
+			$forum_row['LAST_POST_TIME'] = '<script>
 				var script = document.currentScript || (function() {
 					var scripts = document.getElementsByTagName("script");
 					return scripts[scripts.length - 1];
